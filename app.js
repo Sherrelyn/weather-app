@@ -7,7 +7,11 @@ request({ url:  url, json: true }, (error, response) => {
     console.log(response.body.weather[0].description + '. It is currently ' + response.body.main.temp + ' degrees fahrenheit out. There is a ' + response.body.clouds.all + '% chance of rain.')
 })
 
-// Goal: Print a small forecast to the user
+const geocodeURL = 'https://geocode.maps.co/search?q=Bulan+Sorsogon+Philippines'
 
-// 1. Print: "It is currently 58.55 degrees out. There is a chance of rain." 
-// 2. Test your work!
+request({ url:geocodeURL, json: true }, (error, response) => {
+    const latitude = response.body[0].lat
+    const longitude = response.body[0].lon
+
+    console.log(latitude, longitude)
+})
