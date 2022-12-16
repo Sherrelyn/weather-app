@@ -1,11 +1,8 @@
-console.log('Starting')
+const request = require('request')
 
-setTimeout(() => {
-    console.log('2 Second Timer')
-}, 2000)
+const url = 'http://api.openweathermap.org/data/2.5/weather?q=Bulan,ph&APPID=4ec5c0904e05f548051f556cad0e94b8'
 
-setTimeout(() => {
-    console.log('0 Second Timer')
-}, 0)
-
-console.log('Stopping')
+request({ url:  url }, (error, response) => {
+    const data = JSON.parse(response.body)
+    console.log(data)
+})
