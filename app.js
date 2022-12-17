@@ -28,7 +28,7 @@ if (!address) {
 
 
 
-//const url = 'http://api.openweathermap.org/data/2.5/weather?q=Bulan,ph&APPID=4ec5c0904e05f548051f556cad0e94b8'
+//const url = 'http://api.openweathermap.org/data/2.5/weather?q=Bulan,ph&APPID='
 
 //request({ url:  url, json: true }, (error, response) => {
   //  if (error) {
