@@ -1,6 +1,31 @@
-const request = require('request')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+
+const address = process.argv[2]
+console.log(process.argv)
+
+if (!address) {
+    console.log('Please provide an address')
+} else {
+    geocode(address, (error, data) => {
+        if (error) {
+            return console.log(error)
+        }
+    
+        forecast(data.latitude, data.longitude, (error, forecastData) => {
+            if (error) {
+                return console.log(error)
+            }
+    
+            console.log(data.location)
+            console.log(forecastData)
+        })
+    })
+
+}
+
+
+
 
 //const url = 'http://api.openweathermap.org/data/2.5/weather?q=Bulan,ph&APPID=4ec5c0904e05f548051f556cad0e94b8'
 
@@ -12,9 +37,10 @@ const forecast = require('./utils/forecast')
     //} else {
       //  console.log(response.body.weather[0].description + '. It is currently ' + response.body.main.temp + ' degrees fahrenheit out. There is a ' + response.body.clouds.all + '% chance of rain.')
     //}
+    //console.log(response.body)
 //})  
     
-    //console.log(response.body)
+    
 
 //const geocodeURL = 'https://geocode.maps.co/search?q=Bulan+Sorsogon+Philippines'
 
@@ -29,17 +55,9 @@ const forecast = require('./utils/forecast')
 //    const longitude = response.body[0].lon
 //    console.log(latitude, longitude)
 
-//    }
-   
+//    }  
 //})
 
 
-//geocode('Thailand', (error, data) => {
-//    console.log('Error!', error)
-//    console.log('Data', data)
-//})
 
-forecast(-75.7088, 44.1545, (error, data) => {
-    console.log('Error', error)
-    console.log('Data', data)
-})
+
