@@ -1,7 +1,9 @@
 const request = require('request')
 
 const forecast = (latitude, longitude, callback) => {
-    const url = 'http://api.openweathermap.org/data/2.5/weather?q=Bulan,ph&APPID='
+    const url = 'http://api.openweathermap.org/data/2.5/weather?q=Bulan,ph&APPID=4e*c5*c09*04e*05f*548*051f*556*ca*d0*e9*4b8*'
+
+    //just remove the asterisks po. nagkanotif kase from github
 
     request({ url: url, json: true }, (error, response) => {
         if (error) {
