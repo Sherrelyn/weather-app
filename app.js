@@ -40,8 +40,7 @@ if (!address) {
     //}
     //console.log(response.body)
 //})  
-    
-    
+       
 
 //const geocodeURL = 'https://geocode.maps.co/search?q=Bulan+Sorsogon+Philippines'
 
@@ -58,7 +57,4 @@ if (!address) {
 
 //    }  
 //})
-
-
-
 

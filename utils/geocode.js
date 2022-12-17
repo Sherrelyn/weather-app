@@ -2,7 +2,7 @@ const request = require('request')
 
 
 const geocode = (address, callback) => {
-    const url = 'https://geocode.maps.co/search?q={address}'
+    const url = 'https://geocode.maps.co/search?q={Philippines}'
 
     request ({ url: url, json: true}, (error, response) => {
         if (error) {
