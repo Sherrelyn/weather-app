@@ -51,7 +51,7 @@ h2 {
 }
 
 .weatherLocation button{
-  background: #080705;
+  background: black;
   color:#fff;
   border: 1px solid transparent;
 }
@@ -77,7 +77,7 @@ h2 {
 .widget .weatherInfo {
   flex: 0 0 70%;
   height: 40%;
-  background: #080705;
+  background: black;
   border-bottom-left-radius: 20px;
   display: flex;
   align-items: center;
