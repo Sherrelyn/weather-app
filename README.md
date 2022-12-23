@@ -12,12 +12,12 @@ STEP 2: Run the command "npm start"
 
 : the following will be seen-
 
-- node-chat-app@1.0.0 start
+- weatherapp@1.0.0 start
 
-- node server/server.js
+- node src/app.js
 
 
-Server is up on 3000
+Server is up and running on port:  3000
 
 
 
