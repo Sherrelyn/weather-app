@@ -80,3 +80,7 @@ Require stack:
 
 - Then, you may now run (npm start) and continue the process mentioned above. 
 
+
+# FOR REFERENCE PURPOSES:
+
+![Screenshot (143)](https://user-images.githubusercontent.com/92195916/209426475-bf0aa2bf-4e3e-4cc9-a24c-c58d347dd8b4.png)
